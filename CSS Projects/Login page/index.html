@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test2</title>
+  </head>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background-image: url('../../img/loogoo.jpeg');
+    }
+    .body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      border-radius: 20px;
+      padding: 10px;
+      width: 320px;
+      height: auto;
+    }
+    .logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      margin: 40px 0px;
+    }
+    .username{
+      background-color: transparent;
+      border: 1px solid black;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      border-radius: 7px;
+      margin: 5px 0px;
+    }
+    .password{
+      background-color: transparent;
+      border: 1px solid black;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      border-radius: 7px;
+      margin: 5px 0px;
+    }
+    .loginbutton{
+      width: 100%;
+      margin-top: 20px;
+    }
+    .forgotbutton{
+      color: white;
+      width: 100%;
+      height: 100%;
+      padding: 5px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    #loginbtn{
+      padding: 10px;
+      width: 100%;
+      border: 1px solid black;
+      border-radius: 7px;
+    }
+    .username input ,.password input{
+      width: 100%;
+      border: none;
+      background-color: transparent;
+      padding: 8px;
+      margin: 3px;
+    }
+    .username input ,.password input:focus-visible{
+      outline: none;
+    }
+    img{
+      margin: 5px 10px;
+      width: 25px;
+      height: 25px;
+    }
+    .logo img{
+      width: 100px;
+      height: 100px;
+      border-radius: 20px;
+      border: 2px solid black;
+    }
+  </style>
+  <body>
+<div class="body">
+    <div class="container">
+ 
+      <div class="logo">
+        <img src="../../img/logo.jpeg" alt="-" width="100px" height="100px">
+      </div>
+ 
+      <div class="username">
+        <img src="../../img/username.jpeg" alt="-" width="20px" height="20px">
+        <input type="text" size="30" placeholder="username">
+      </div>
+ 
+      <div class="password">
+       <img src="../../img/password.jpeg"alt="-" width="20px" height="20px">
+        <input type="password" size="30" placeholder="password">
+      </div>
+ 
+      <div class="loginbutton">
+        <input type="submit" id="loginbtn" value="login">
+      </div>
+ 
+      <div class="forgotbutton">
+        <div><p>Forgot password?</p></div>
+      </div>
+ 
+    </div>
+  </div>
+  </body>
+</html>

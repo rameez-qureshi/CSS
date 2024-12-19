@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 30px auto;
+            width: 700px;
+            overflow: hidden;
+        }
+        .slider{
+            position: relative;
+            left: 0;
+            width: 500%;
+            animation: slider 25s ease infinite;
+        }
+        img{
+            width: 700px;
+            /* width: 10%; */
+            float: left;
+        }
+        @keyframes slider {
+            /* 0%{left: 0;}
+            21%{left: -100%;}
+            26%{left: -200%;}
+            47%{left: -300%;}
+            52%{left: -200%;}
+            73%{left: -100%;}
+            78%{left: 0;}
+            99.9%{left: 0;}
+            100%{left: 0} */
+
+            
+            0%{left: 0;}
+            15%{left: 0;}
+            16%{left: -100%;}
+            32%{left: -100%;}
+            33%{left: -200%;}
+            48%{left: -200%;}
+            49%{left: -300%;}
+            64%{left: -300%;}
+            65%{left: -200%;}
+            80%{left: -200%;}
+            81%{left: -100%;}
+            98%{left: -100%}
+            99%{left: 0;}
+            100%{left: 0;}
+
+            /* 5%{left: 0;}
+            10%{left: -100%;}
+            15%{left: -200%;}
+            20%{left: -300%;}
+            20.01%{left: 0%;}
+            25%{left: 0%;}
+            30%{left: -100%;}
+            35%{left: -200%;}
+            40%{left: -300%;}
+            40.01%{left: 0;}
+            45%{left: 0;}
+            50%{left: -100%;}
+            55%{left: -200%;}
+            60%{left: -300%;}
+            60.01%{left: 0;}
+            65%{left: 0;}
+            70%{left: -100%;}
+            75%{left: -200%;}
+            80%{left: -300%;}
+            80.01%{left: 0;}
+            85%{left: -100%;}
+            90%{left: -200%;}
+            95%{left: -300%;}
+            95.01%{left: 0;}
+            100%{left: 0;} */
+
+            /* 0%{left: 0;}
+            5%{left: -100%;}
+            10%{left: -200%;}
+            15%{left: -300%;}
+            20%{left: -200%;}
+            25%{left: -100%;}
+            30%{left: 0;}
+            35%{left: -100%;}
+            40%{left: -200%;}
+            45%{left: -300%;}
+            50%{left: -200%;}
+            55%{left: -100%;}
+            60%{left: 0;}
+            65%{left: -100%;}
+            70%{left: -200%;}
+            75%{left: -300%;}
+            80%{left: -200%;}
+            85%{left: -100%;}
+            90%{left: 0;}
+            95%{left: -100%;}
+            100%{left: 0;} */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <img src="../../img/pex1.jpeg" alt="img">
+            <img src="../../img/pex2.jpeg" alt="img">
+            <img src="../../img/pex4.jpeg" alt="img">
+            <img src="../../img/pex5.jpeg" alt="img">
+        </div>
+    </div>
+</body>
+</html>

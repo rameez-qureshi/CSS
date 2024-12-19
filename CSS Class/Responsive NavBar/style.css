@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(180, 247, 247);
+}
+header{
+    position: fixed;
+    width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+}
+.div-logo img{
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px 130px;
+    box-shadow: 0px 0px 8px 1px white;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 185px;
+}
+.links li{
+    list-style: none;
+}
+.links li a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 0px 3px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.links li a.active, 
+.links li a:hover{
+    color: rgba(255, 255, 255, 0.7);
+}
+.nav-btn{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 25px;
+    cursor: pointer;
+    display: none;
+}
+.nav-btn div{
+    line-height: 28px;
+}
+#check{
+	/* position: absolute; */
+	/* top: -100px; */
+    display: none;
+}
+
+@media screen and (max-width:1124px){
+    .links{
+        margin: 0px 80px;
+    }
+    .div-logo img{
+        margin: 8px 90px;
+    }
+}
+@media screen and (max-width:832px){
+    .links{
+        margin: 0px 8px;
+    }
+    .div-logo img{
+        width: 40px;
+        margin: 8px 30px;
+    }
+    .links li a{
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+}
+@media screen and (max-width:420px){
+    .links{
+        position: fixed;
+        z-index: -1;
+        top: 59px;
+        left: 0;
+        right: 0;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: darkgrey;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        margin: 0;
+    }
+    .links li a{
+        font-size: 22px;
+        margin: 20px 0px;
+        color: black;
+    }
+    .nav-btn{
+        display: block;
+    }
+    #check{
+        display: none;
+    }
+    #check:checked ~ .links{
+        bottom: 0;
+    }
+    #check:checked ~ .nav-btn{
+        color: rgba(255, 255, 255, 0.7);
+    }
+}

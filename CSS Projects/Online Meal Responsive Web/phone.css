@@ -1,0 +1,70 @@
+/* CSS RESET */
+
+/* CSS Variables */
+
+/* UTILITY CLASSES */
+
+.h-primary {
+  font-size: 2.5rem;
+  padding: 8px;
+}
+.h-secondary {
+  font-size: 1.5rem;
+  padding: 8px;
+}
+p {
+  font-size: 0.9rem;
+  padding: 6px;
+}
+.btn {
+  margin: 8px;
+  font-size: 1rem;
+  padding: 6px 10px;
+}
+
+/* NAV BAR */
+
+#navbar {
+  justify-content: center;
+  align-items: center;
+}
+#navbar ul li a{
+  font-size: 1rem;
+}
+#logo img {
+  width: 30px;
+}
+
+/* HOME SECTION */
+
+#home{
+  padding: 8px 60px;
+  height: 250px;
+}
+#home::before{
+  height: 315px;
+}
+
+/* SERVICES SECTION */
+
+#services {
+  flex-direction: column;
+}
+
+/* CLIENTS SECTION */
+
+#clients .clients-item {
+  padding: 7px;
+}
+
+/* CONTACT SECTION */
+
+#contact form {
+  width: 70%;
+}
+
+/* FOOTER SECTION */
+
+#footer {
+  padding: 5px;
+}

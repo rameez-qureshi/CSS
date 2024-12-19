@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Preahvihear', sans-serif;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+/* NAV BAR */
+
+nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+nav::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid black;
+    z-index: -1;
+    opacity: 0.8;
+}
+.logo{
+    margin: 10px 34px;
+}
+nav .logo img{
+    width: 59px;
+    border-radius: 20px;
+    margin: 3px 6px;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+}
+nav ul li{
+    font-size: 1.3rem;
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+}
+nav ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+}
+
+/* HOME SECTION */
+
+#sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    color: white;
+}
+#sec1::before{
+    content: "";
+    position: absolute;
+    background: url('../../img/loogoo.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.89;
+}
+#sec1 h1{
+    text-align: center;
+    color: white;
+}
+.btn{
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    padding: 6px 22px;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

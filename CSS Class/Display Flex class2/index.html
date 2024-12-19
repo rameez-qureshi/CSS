@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex 2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: lightseagreen;
+        }
+        .fcontainer{
+            border: 3px solid black;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: auto;
+        }
+ 
+        li{
+            list-style-type: none;
+            background-color: lightgrey;
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 5px;
+            height: 96.3px;
+        }
+ 
+        #li1{
+            margin-top: 0px;
+        }
+ 
+        .fitem{
+        }
+ 
+        #companyname{
+            border: 2px solid black;
+            background-color: lightgrey;
+            margin: 10px;
+            padding: 20px;
+            flex: 3;
+            height: 400px;
+        }
+        #items{
+            margin: 10px;
+            flex: 2;
+            height: 400px;
+        }
+        #subscribe{
+            border: 2px solid black;
+            background-color: lightgrey;
+            margin: 10px;
+            padding: 20px;
+            height: 400px;
+        }
+       
+ 
+ 
+    </style>
+  </head>
+  <body>
+    <div class="fcontainer">
+ 
+      <div class="fitem" id="companyname"><h2><i>Company Name</i></h2></div>
+ 
+      <div class="fitem" id="items">
+        <ul>
+          <li id="li1"><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Contact Us</a></li>
+          <li><a>Sign Up</a></li>
+        </ul>
+      </div>
+ 
+      <div class="fitem" id="subscribe"><h3>Subscribe</h3></div>
+ 
+    </div>
+  </body>
+</html>
+ 
+ 
+ 
+

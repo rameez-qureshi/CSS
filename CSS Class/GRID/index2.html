@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid2 Area</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .container{
+            display: grid;
+            grid-gap: 1rem ;
+            grid-template-areas: 
+            'header header header header'
+            'section section section aside'
+            'div div div aside'
+            'footer footer footer footer';
+        }
+        .items{
+            background-color: aquamarine;
+            border:  2px solid black;
+            padding: 10px 25px;
+        }
+        header{grid-area: header;}
+        section{grid-area: section}
+        div{grid-area: div}
+        aside{grid-area: aside;}
+        footer{grid-area: footer;}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="items">items-1</header>
+      <section class="items">items-2</section>
+      <div class="items">items-3</div>
+      <aside class="items">items-4</aside>
+      <footer class="items">items-5</footer>
+    </div>
+  </body>
+</html>

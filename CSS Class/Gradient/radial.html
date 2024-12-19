@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Radial Gradient</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            height: 50vh;
+        }
+        .box{
+            border: 4px solid black;
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+            width: 250px;
+            height: 250px;
+        }
+
+        #box1{  background-image: radial-gradient(circle,red,blue);  }
+
+        #box2{  background-image: radial-gradient(at top right,red,blue);  }
+
+        #box3{  background-image: radial-gradient(circle at top,red,blue);  }
+
+        /* #box3{  background-image: radial-gradient(ellipse at top,red,blue);  } */
+        /* ellipse mean stretched circle */
+
+        #box4{  background-image: radial-gradient(circle at 30%,red,blue);  }
+
+        #box5{  background-image: radial-gradient(circle at 80% 80%,red,blue);  }
+
+        #box6{  background-image: radial-gradient(red ,blue ,yellow ,green 50%);  }
+
+        #box7{  background-image: radial-gradient(rgba(255, 0, 0,0.9),rgba(255, 0, 0, 0));  }
+
+        #box8{  background-image: radial-gradient(rgba(255, 0, 0,0.9),transparent);  }
+
+        #box9{  background-image: repeating-radial-gradient( red , green , blue 33.3%);  }
+
+        /* #box9{  background-image: repeating-radial-gradient(45deg, red , green , blue 33.3%);  } */
+
+        /* percentage deingay tw repeating radial gradient work karayga
+         jitni percentage deingay baki bachi hui pr work karayga */
+
+        #box10{  background-image: radial-gradient(circle at top left,red 5%,transparent),
+                                   radial-gradient(circle at 95% 95%,red,transparent);  }
+
+        #box11{  background-image: radial-gradient(circle at top left,green,transparent),
+                                   radial-gradient(circle at top right,blue,transparent),
+                                   radial-gradient(circle at bottom left,black,transparent),
+                                   radial-gradient(circle at bottom right,red,transparent); }
+
+        #box12{  background-image: radial-gradient(closest-corner at 20% 20%,red,yellow,green);  }
+        /* circle qareeb walay corner say chipkayga stretch hokay */
+
+        #box13{  background-image: radial-gradient(closest-side at 20% 20%,red,yellow,green);  }
+        /* circle qareeb wali side say chipkayga stretch hokay */
+
+        #box14{  background-image: radial-gradient(farthest-corner at 20% 20%,red,yellow,green);  }
+        /* circle dur walay corner say chipkayga stretch hokay */
+
+        #box15{  background-image: radial-gradient(farthest-side at 20% 20%,red,yellow,green);  }
+        /* circle dur wali side say chipkayga stretch hokay */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+    </div>
+    <div class="container">
+        <div class="box" id="box6">6</div>
+        <div class="box" id="box7">7</div>
+        <div class="box" id="box8">8</div>
+        <div class="box" id="box9">9</div>
+        <div class="box" id="box10">10</div>
+    </div>
+    <div class="container">
+        <div class="box" id="box11">11</div>
+        <div class="box" id="box12">12</div>
+        <div class="box" id="box13">13</div>
+        <div class="box" id="box14">14</div>
+        <div class="box" id="box15">15</div>
+    </div>
+</body>
+</html>

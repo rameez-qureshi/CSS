@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:100vh;
+            background-color: bisque;
+        }
+        ul{
+            transform: skewY(-15deg);
+            position: relative;
+        }
+        ul li{
+            list-style: none;
+            position: relative;
+        }
+        ul li a{
+            position: relative;
+            text-decoration: none;
+            background-color: #3e3f46;
+            width: 200px;
+            padding: 15px;
+            color: #999;
+            display: block;
+            transition: 0.5s ;
+            z-index: var(--i);
+        }
+        ul li a::before{
+            content: "";
+            position: absolute;
+            top: -19px;
+            left: -39px;
+            text-decoration: none;
+            background-color: #27272a;
+            width: 40px;
+            height: 100%;
+            transform: skew(0deg , 45deg);
+            transition: 0.5s ;
+        }
+        ul li a::after{
+            content: "";
+            position: absolute;
+            top: -39px;
+            left: 0;
+            text-decoration: none;
+            background-color: #515155;
+            width: 100%;
+            height: 40px;
+            transform: skewX(45deg) translateX(-20px);
+            z-index: -3;
+            transition: 0.5s ;
+        }
+        ul li a:hover {
+            color: black;
+            background-color: #3333bd;
+            transform: translateX(-50px);
+        }
+        ul li a:hover::before{
+            color: black;
+            background-color: #1515cf;
+            
+        }
+        ul li a:hover::after{
+            color: black;
+            background-color: #303080;
+        }
+
+        .last::after{
+            box-shadow: -120px 120px 20px rgb(0,0,0,0.25);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="#" style="--i:5">Home</a></li>
+            <li><a href="#" style="--i:4">Services</a></li>
+            <li><a href="#" style="--i:3">About</a></li>
+            <li><a href="#" style="--i:2">Contact</a></li>
+            <li><a href="#" style="--i:1" class="last">JOIN</a></li>
+        </ul>
+    </div>
+</body>
+</html>
